@@ -23,6 +23,8 @@
   width: max-content;
   gap: 2rem;
   animation: scroll 25s linear infinite;
+  will-change: transform;
+  
 }
 
 .text {
