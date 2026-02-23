@@ -1,0 +1,36 @@
+.mask {
+  width: 100%;
+  overflow: hidden;
+
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  gap: 2rem;
+  animation: scroll 25s linear infinite;
+}
+
+.text {
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
